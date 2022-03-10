@@ -1,0 +1,45 @@
+.labaratori{
+  display: flex;
+  //align-items: center;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 200px;
+  margin-top: 92px;
+  .labaratori__left{
+    span{
+      width: 250px;
+      height: 4px;
+      background: #e1e1e1;
+      display: block;
+      margin-bottom: 64px;
+    }
+    .labaratori__left--title{
+        font-size: 48px;
+        line-height: 57px;
+        text-transform: uppercase;
+        color: #282525;
+        font-family: 'Marmelad-R';
+        margin-bottom: 32px;
+    }
+    .text__info{
+      font-size: 24px;
+      line-height: 130%;
+      color: #4F4F4F;
+      max-width: 986px;
+    }
+  }
+  .slide__filter{
+    width: 25%;
+  }
+}
+.main__labaratori {
+  .main__title {
+    font-size: 48px;
+    line-height: 57px;
+    text-transform: uppercase;
+    color: #282525;
+    font-family: 'Marmelad-R';
+    margin: 120px 0px;
+    margin-left: 100px;
+  }
+}

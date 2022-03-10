@@ -1,0 +1,40 @@
+.all{
+  background: #ffffff;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1720px;
+  margin: auto;
+  .menu{
+    ul{
+      display: flex;
+      align-items: center;
+      li{
+        list-style: none;
+        margin: 0px 22px;
+        a{
+          text-decoration: none;
+          font-family: Lato-Regular;
+          font-size: 24px;
+          line-height: 130%;
+          color: var(--black);
+        }
+      }
+    }
+  }
+  .search__language{
+    display: flex;
+    align-items: center;
+    .search{
+      margin-right: 100px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.services{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -173px;
+  .tip__service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 284px;
+    height: 220px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    &:first-child{
+      border-radius: 10px 0px 0px 10px;
+    }
+    &:last-child{
+      border-radius: 0px 10px 10px 0px;
+    }
+    .tip__service--text{
+      font-size: 24px;
+      line-height: 29px;
+      color: var(--black);
+    }
+  }
+}
