@@ -32,3 +32,4 @@ build/
 ### VS Code ###
 .vscode/
 /.mvn/
+/ui/node_modules/
