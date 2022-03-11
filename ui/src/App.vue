@@ -2,14 +2,8 @@
   <div id="app">
     <div id="nav">
       <v-app id="inspire">
-<!--        <v-main>-->
-<!--          <div class="container">-->
-<!--            -->
-<!--          </div>-->
-<!--        </v-main>-->
         <fil-head/>
         <router-view/>
-<!--        <ani/>-->
       </v-app>
     </div>
   </div>

@@ -20,7 +20,11 @@
           </button>
         </div>
         <div class="language">
-          RU
+          <select name="" id="">
+            <option value="RU">RU</option>
+            <option value="UZ">UZ</option>
+            <option value="EN">EN</option>
+          </select>
         </div>
       </div>
     </header>
