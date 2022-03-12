@@ -3,6 +3,7 @@
     <div class="title">
       Подписаться на нас
     </div>
+
     <div class="div">
       <div class="top">
         <img src="../../assets/img/top_img.svg" alt="">
@@ -29,45 +30,66 @@
       </button>
 
     </div>
-    <div class="allphone">
-      <div class="tel1">
-        <img src="../../assets/img/call.svg" alt="">
-        <div class="callnumber">
-          (+998 95) 607 54 00
+
+    <div class="fazliddin">
+      <div class="allphone">
+
+        <div class="newtel">
+          <div class="tel1">
+            <img src="../../assets/img/call.svg" alt="">
+            <div class="callnumber">
+              (+998 95) 607 54 00
+            </div>
+          </div>
+          <div class="tel1">
+            <img src="../../assets/img/call.svg" alt="">
+            <div class="callnumber">
+              (+998 91) 331 00 47
+            </div>
+          </div>
         </div>
+
       </div>
-      <div class="tel1">
-        <img src="../../assets/img/call.svg" alt="">
-        <div class="callnumber">
-          (+998 91) 331 00 47
+
+      <div class="allphone">
+
+        <div class="newtel">
+          <div class="tel1">
+            <img src="../../assets/img/call.svg" alt="">
+            <div class="callnumber">
+              (+998 95) 607 54 00
+            </div>
+          </div>
+          <div class="tel1">
+            <img src="../../assets/img/location.svg" alt="">
+            <div class="callnumber">
+              Адрес: Узбекистан, г.Навои
+            </div>
+          </div>
         </div>
+
       </div>
-      <div class="tel1">
-        <img src="../../assets/img/sms-star.svg" alt="">
-        <div class="callnumber">
-          ifa-65@mail.ru
+
+      <div class="allphone">
+        <div class="newtel">
+          <div class="tel1">
+            <img src="../../assets/img/call.svg" alt="">
+            <div class="callnumber">
+              (+998 95) 607 54 00
+            </div>
+          </div>
+          <div class="tel2">
+            <a href="#"><img src="../../assets/img/instagram.svg" alt=""></a>
+            <a href="#"><img src="../../assets/img/facebook.svg" alt=""></a>
+            <a href="#"><img src="../../assets/img/telegram.svg" alt=""></a>
+          </div>
         </div>
+
+
+
       </div>
     </div>
-    <div class="allphone">
-      <div class="tel1">
-        <img src="../../assets/img/call.svg" alt="">
-        <div class="callnumber">
-          (+998 90) 717 54 54
-        </div>
-      </div>
-      <div class="tel1">
-        <img src="../../assets/img/location.svg" alt="">
-        <div class="callnumber">
-          Адрес: Узбекистан, г.Навои
-        </div>
-      </div>
-      <div class="tel2">
-        <img src="../../assets/img/instagram.svg" alt="">
-        <img src="../../assets/img/facebook.svg" alt="">
-        <img src="../../assets/img/telegram.svg" alt="">
-      </div>
-    </div>
+
     <br>
     <br>
     <br>
@@ -146,31 +168,36 @@ export default {
       color: #FFFFFF;
     }
   }
-  .allphone{
-    margin-bottom: 46px;
+  .fazliddin{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 0 100px 0 100px;
-
-    .tel1{
+    .allphone{
+      margin-bottom: 46px;
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      padding: 0 100px 0 100px;
+
+      .tel1{
+        display: flex;
+        align-items: center;
+        margin-bottom: 46px;
+        img{
+          margin-right: 32px;
+        }
+
+      }
+    .tel2{
+      display: flex;
+      align-items: center;
+      margin-bottom: 46px;
       img{
         margin-right: 32px;
       }
 
     }
 
-    .tel2{
-      display: flex;
-      align-items: center;
-      img{
-        margin-left: 32px;
-      }
-
     }
-
   }
 }
 </style>

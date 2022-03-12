@@ -14,7 +14,9 @@
       <div class="cocotext">
         © OOO "Universal Filter" - Ваш надежный партнер!
       </div>
-      <img src="../../assets/img/radium_bottom.png" alt="">
+      <a href="http://radium.uz/" target="_blank">
+        <img src="../../assets/img/radium_bottom.png" alt="">
+      </a>
     </div>
   </div>
 </template>

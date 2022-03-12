@@ -16,11 +16,11 @@
           </div>
           <div class="radio" :class="{'active' : radio3}">
             <input type="radio" id="three" name="gender" @change="back(3)">
-            <label for="three">Специальные фильтры </label>
+            <label for="three">СПЕЦИАЛЬНЫЕ ФИЛЬТРЫ</label>
           </div>
           <div class="radio" :class="{'active' : radio4}">
             <input type="radio" id="four" name="gender" @change="back(4)">
-            <label for="four">производственные фильтры</label>
+            <label for="four">ПРОИЗВОДСТВЕННЫЕ ФИЛЬТРЫ</label>
           </div>
         </form>
       </div>

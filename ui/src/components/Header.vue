@@ -2,7 +2,9 @@
   <div class="all">
     <header class="header">
       <div class="logo">
-        <img src="../assets/img/logo.svg" alt="">
+        <a href="/">
+          <img src="../assets/img/logo.svg" alt="">
+        </a>
       </div>
       <div class="menu">
         <ul>
