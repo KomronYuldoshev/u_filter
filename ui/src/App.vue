@@ -3,7 +3,10 @@
     <div id="nav">
       <v-app id="inspire">
         <fil-head/>
-        <router-view/>
+        <router-view />
+        <div class="pro" v-if="$route.name=='product'">
+          <product/>
+        </div>
       </v-app>
     </div>
   </div>
@@ -11,16 +14,19 @@
 
 <script>
 import FilHead from './components/Header.vue'
+import product from './components/SecondPage/LeftMenu'
 
 export default {
   data() {
     return {
       drawer: null,
+      productB: false
     }
   },
   components: {
     FilHead,
-  }
+    product
+  },
 }
 </script>
 <style lang="scss">
@@ -127,5 +133,10 @@ select {
   &:focus {
     outline: 0;
   }
+}
+.pro{
+  position: absolute;
+  top: 240px;
+  left: 47px;
 }
 </style>

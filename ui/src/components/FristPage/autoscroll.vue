@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div class="title__text">
+      нАШИ ПАРТНЕРЫ
+    </div>
     <div class="marquee">
       <div class="marquee--inner">
         <span>
@@ -21,6 +24,16 @@
   </div>
 </template>
 <style scoped>
+.title__text{
+  font-size: 48px;
+  line-height: 57px;
+  text-transform: uppercase;
+  color: #282525;
+  font-family: 'Marmelad-R';
+  margin-left: 100px;
+  margin-top: 200px;
+  margin-bottom: 92px;
+}
 .orb {
   display: inline-block;
   margin: 0 46px;
@@ -49,7 +62,7 @@ span{
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
-  margin: 200px auto;
+  margin-bottom: 120px;
 }
 
 .marquee--inner {

@@ -1,6 +1,6 @@
 <template>
   <div class="patpisatsiya">
-    <div class="title">
+    <div class="patpisatsiya__title">
       Подписаться на нас
     </div>
 
@@ -37,15 +37,15 @@
         <div class="newtel">
           <div class="tel1">
             <img src="../../assets/img/call.svg" alt="">
-            <div class="callnumber">
+            <a href="tel:=+998 95 607 54 00" class="callnumber">
               (+998 95) 607 54 00
-            </div>
+            </a>
           </div>
           <div class="tel1">
             <img src="../../assets/img/call.svg" alt="">
-            <div class="callnumber">
+            <a href="tel:=+998 91 331 00 47" class="callnumber">
               (+998 91) 331 00 47
-            </div>
+            </a>
           </div>
         </div>
 
@@ -56,15 +56,15 @@
         <div class="newtel">
           <div class="tel1">
             <img src="../../assets/img/call.svg" alt="">
-            <div class="callnumber">
+            <a href="tel:=+998 95 607 54 00" class="callnumber">
               (+998 95) 607 54 00
-            </div>
+            </a>
           </div>
           <div class="tel1">
             <img src="../../assets/img/location.svg" alt="">
-            <div class="callnumber">
+            <a href="https://www.google.com/maps/@40.0753355,65.3673116,1680m/data=!3m1!1e3" target="_blank" class="callnumber">
               Адрес: Узбекистан, г.Навои
-            </div>
+            </a>
           </div>
         </div>
 
@@ -73,10 +73,10 @@
       <div class="allphone">
         <div class="newtel">
           <div class="tel1">
-            <img src="../../assets/img/call.svg" alt="">
-            <div class="callnumber">
-              (+998 95) 607 54 00
-            </div>
+            <img src="../../assets/img/email.png" alt="">
+            <a href="mailto:ifa-65@mail.ru" class="callnumber">
+              ifa-65@mail.ru
+            </a>
           </div>
           <div class="tel2">
             <a href="#"><img src="../../assets/img/instagram.svg" alt=""></a>
@@ -104,26 +104,28 @@ export default {
 
 <style scoped lang="scss">
 .patpisatsiya{
-  width: 1720px;
+  max-width: 1720px;
   margin: auto;
-  .title{
+  .patpisatsiya__title{
     font-size: 48px;
     line-height: 57px;
     color: #282525;
     margin-bottom: 92px;
     width: 1720px;
-
+    font-family: 'Marmelad-R';
+    margin-top: 120px;
 
   }
   .div{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1630px;
-    margin: auto;
+    //width: 1630px;
+    //margin: auto;
     height: 220px;
     background: #F7F7F7;
     margin-bottom: 120px;
+    padding: 46px;
 
     .top {
       display: flex;
@@ -185,7 +187,13 @@ export default {
         img{
           margin-right: 32px;
         }
-
+        a{
+          color: #303439;
+          &:hover{
+            color: #1976d2;
+            text-decoration: revert;
+          }
+        }
       }
     .tel2{
       display: flex;

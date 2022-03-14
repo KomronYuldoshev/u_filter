@@ -11,8 +11,8 @@
           <li><a href="#/">Главная</a></li>
           <li><a href="#/product">Продукты</a></li>
           <li><a href="#/kompaniya">Компания</a></li>
-          <li><a href="#">Сертификаты</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="#/Sertificat">Сертификаты</a></li>
+          <li><a href="#/contact">Контакты</a></li>
         </ul>
       </div>
       <div class="search__language">

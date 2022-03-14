@@ -31,6 +31,10 @@ export default {
     margin-bottom: 92px;
   }
 }
+iframe{
+  width: 100%;
+  height: 780px;
+}
 </style>
 <style scoped lang="scss">
 @media screen and (max-width: 3000px){

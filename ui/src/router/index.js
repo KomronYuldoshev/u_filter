@@ -12,13 +12,28 @@ const routes = [
   },
   {
     path: '/product',
-    name: 'first__page',
+    name: 'product',
     component: () => import('../views/SecondPage')
   },
+  // {
+  //   path: '/product',
+  //   name: 'left',
+  //   component: () => import('../components/SecondPage/LeftMenu')
+  // },
   {
     path: '/kompaniya',
     name: 'companiya',
     component: () => import('../views/Companiya')
+  },
+  {
+    path: '/sertificat',
+    name: 'sertificat',
+    component: () => import('../views/Sertificat')
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: () => import('../views/Contact')
   },
 ]
 

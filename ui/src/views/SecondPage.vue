@@ -10,7 +10,7 @@
       </div>
     </a>
     <div class="rightpage">
-      <left/>
+<!--      <left/>-->
       <span></span>
       <right/>
     </div>
@@ -18,7 +18,7 @@
 </template>
 <script>
 
-import left from '../components/SecondPage/LeftMenu'
+// import left from '../components/SecondPage/LeftMenu'
 import right from '../components/SecondPage/RightPage'
 
 export default {
@@ -26,7 +26,7 @@ export default {
     return {}
   },
   components: {
-    left,
+    // left,
     right
   },
   mounted() {
