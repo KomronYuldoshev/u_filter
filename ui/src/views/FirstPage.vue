@@ -55,7 +55,6 @@ export default {
 <style lang="scss" scoped>
 .all {
   position: relative;
-  //zoom: 40%;
 }
 
 .animation {
