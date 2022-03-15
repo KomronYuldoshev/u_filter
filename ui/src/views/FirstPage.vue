@@ -15,6 +15,9 @@
       <sliderr/>
       <labaratori/>
       <autoscroll/>
+      <map-site/>
+      <subscribe/>
+      <Footer/>
     </div>
   </div>
 </template>
@@ -24,12 +27,18 @@ import fil from '../components/FristPage/SpecialFilter'
 import sliderr from '../components/FristPage/slider'
 import labaratori from '../components/FristPage/labaratori'
 import autoscroll from '../components/FristPage/autoscroll'
+import MapSite    from '../components/FristPage/MapSite'
+import subscribe from "@/components/FristPage/SubscribeUs";
+import Footer from "@/components/FristPage/Footer";
 
 export default {
   data() {
     return {}
   },
   components: {
+    Footer,
+    MapSite,
+    subscribe,
     slide,
     fil,
     sliderr,
