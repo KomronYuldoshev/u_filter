@@ -11,7 +11,7 @@
       </li>
       <li>
         <router-link
-                to="/product/s"
+                to="/product/b"
             >
           Cалонный фильтры
             </router-link>
@@ -19,7 +19,7 @@
       </li>
       <li>
         <router-link
-                to="/product/d"
+                to="/product/c"
             >
           Масляные фильтры
             </router-link>
@@ -27,7 +27,7 @@
       </li>
       <li>
         <router-link
-                to="/product/f"
+                to="/product/d"
             >
           Топливные фильтры
             </router-link>
@@ -35,7 +35,7 @@
       </li>
       <li>
         <router-link
-                to="/product/g"
+                to="/product/e"
             >
           Другие
             </router-link>
@@ -80,6 +80,12 @@
           &~span{
             width: 100%;
             transition: all ease 1s;
+          }
+        }
+        &.router-link-exact-active{
+          color: white;
+          &~span{
+            width: 100%;
           }
         }
       }

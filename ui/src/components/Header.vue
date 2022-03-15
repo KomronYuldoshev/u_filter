@@ -8,11 +8,46 @@
       </div>
       <div class="menu">
         <ul>
-          <li><a href="#/">Главная</a></li>
-          <li><a href="#/product">Продукты</a></li>
-          <li><a href="#/kompaniya">Компания</a></li>
-          <li><a href="#/Sertificat">Сертификаты</a></li>
-          <li><a href="#/contact">Контакты</a></li>
+          <li>
+            <router-link
+                to="/"
+            >
+              Главная
+            </router-link>
+            <span></span>
+          </li>
+          <li>
+            <router-link
+                to="/product"
+            >
+              Продукты
+            </router-link>
+            <span></span>
+          </li>
+          <li>
+            <router-link
+                to="/kompaniya"
+            >
+              Компания
+            </router-link>
+            <span></span>
+          </li>
+          <li>
+            <router-link
+                to="/Sertificat"
+            >
+              Сертификаты
+            </router-link>
+            <span></span>
+          </li>
+          <li>
+            <router-link
+                to="/contact"
+            >
+              Контакты
+            </router-link>
+            <span></span>
+          </li>
         </ul>
       </div>
       <div class="search__language">

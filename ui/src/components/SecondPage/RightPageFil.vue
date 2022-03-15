@@ -52,6 +52,20 @@
         </form>
       </div>
     </div>
+    <div class="fil__information">
+      <div class="top">
+        <div class="fil__name">{{$route.meta.title}}</div>
+        <div class="fil__img">
+          <img :src="$route.meta.img" alt="">
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="info1">{{$route.meta.info1}}</div>
+        <div class="info2">{{$route.meta.info2}}</div>
+        <div class="info3">{{$route.meta.info3}}</div>
+        <div class="info4">{{$route.meta.info4}}</div>
+      </div>
+    </div>
     <div class="cards">
       <div class="card">
         <div class="top__card">
@@ -325,6 +339,36 @@ export default {
       }
       input:checked   label{
         background: red;
+      }
+    }
+  }
+  .fil__information{
+    .top{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .fil__name{
+      font-size: 48px;
+      line-height: 57px;
+      color: #282525;
+      font-family: 'Marmelad-R';
+    }
+    .bottom{
+      margin-left: 100px;
+      .info1{
+        font-size: 24px;
+        line-height: 130%;
+        color: #4F4F4F;
+        margin-top: 32px;
+      }
+      .info4,
+      .info3,
+      .info2{
+        font-size: 24px;
+        line-height: 130%;
+        color: #4F4F4F;
+        margin-top: 24px;
       }
     }
   }
