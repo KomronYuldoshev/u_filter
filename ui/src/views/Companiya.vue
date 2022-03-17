@@ -22,8 +22,11 @@
             </div>
             <div class="text__info">
               <ul>
-                <li>Наша компетентность и стандарты качества гарантируют, что каждый фильтр FILTRON обеспечивает надежную защиту в течение всего периода рекомендуемого использования.</li>
-                <li>Тысячи механиков по всей Европе выбирают фильтры FILTRON и ценят решения, облегчающие их работу.</li>
+                <li>Наша компетентность и стандарты качества гарантируют, что каждый фильтр FILTRON обеспечивает
+                  надежную защиту в течение всего периода рекомендуемого использования.
+                </li>
+                <li>Тысячи механиков по всей Европе выбирают фильтры FILTRON и ценят решения, облегчающие их работу.
+                </li>
               </ul>
             </div>
           </div>
@@ -41,7 +44,9 @@
               СОВРЕМЕННЫЕ ПРОИЗВОДСТВЕННЫЕ ЛИНИИ
             </div>
             <div class="text__info">
-              Качество и надежность фильтров FILTRON - это заслуга современных и передовых технологий, используемых на заводах нашей компании. За производство фильтров бренда FILTRON отвечает свыше 2000 специалистов.            </div>
+              Качество и надежность фильтров FILTRON - это заслуга современных и передовых технологий, используемых на
+              заводах нашей компании. За производство фильтров бренда FILTRON отвечает свыше 2000 специалистов.
+            </div>
           </div>
         </div>
       </div>
@@ -50,7 +55,10 @@
       <div class="labaratori__left" data-aos="fade-left">
         <span></span>
         <div class="labaratori__left--title">КОНТРОЛЬ КАЧЕСТВА В ЛАБОРАТОРИИ</div>
-        <div class="text__info">Мы производим контроль как качества материалов, используемых для производства, так и прочности и эффективности готовых продуктов. В современной лаборатории нашей компании мы используем для этих целей свыше 60 методов исследования, которые соответствуют международным стандартам</div>
+        <div class="text__info">Мы производим контроль как качества материалов, используемых для производства, так и
+          прочности и эффективности готовых продуктов. В современной лаборатории нашей компании мы используем для этих
+          целей свыше 60 методов исследования, которые соответствуют международным стандартам
+        </div>
       </div>
       <div class="slide__filter">
         <div class="container">
@@ -89,46 +97,47 @@
           МЫ БЕРЕМ НА СЕБЯ ОТВЕТСТВЕННОСТЬ ЗА КАЧЕСТВО
         </div>
         <div class="text__info">
-          В случае обнаружения дефектов в продуктах марки FILTRON мы гарантируем не только замену продукта новым, но и покрытие трудозатрат у и замену поврежденных деталей. Точные условия гарантии описаны здесь.
+          В случае обнаружения дефектов в продуктах марки FILTRON мы гарантируем не только замену продукта новым, но и
+          покрытие трудозатрат у и замену поврежденных деталей. Точные условия гарантии описаны здесь.
         </div>
-        </div>
+      </div>
     </div>
-    <labaratori/>
-    <auto/>
-    <padpiska/>
-    <foter/>
+        <labaratori/>
+        <auto/>
+        <padpiska/>
+        <foter/>
   </div>
 </template>
 <script>
-  import { Splide, SplideSlide } from '@splidejs/vue-splide';
-  import { createSlides } from "../../utils/slides";
-  import '../assets/slide/splide.min.css'
-  import labaratori from '../components/FristPage/labaratori'
-  import auto from '../components/FristPage/autoscroll'
-  import padpiska from '../components/FristPage/Patpisatsiya'
-  import foter from '../components/FristPage/Footer'
-  export default {
-    data() {
-      return {
-        options: {
-          rewind : true,
-          gap    : '5rem',
-          slides: createSlides(),
-          type   : 'loop',
-          perPage: 1,
-          autoplay: true,
-          drag   : 'free',
-        }
+import {Splide, SplideSlide} from '@splidejs/vue-splide';
+import {createSlides} from "../../utils/slides";
+import '../assets/slide/splide.min.css'
+import labaratori from '../components/FristPage/labaratori'
+import auto from '../components/FristPage/autoscroll'
+import padpiska from '../components/FristPage/Patpisatsiya'
+import foter from '../components/FristPage/Footer'
+export default {
+  data() {
+    return {
+      options: {
+        rewind: true,
+        gap: '5rem',
+        slides: createSlides(),
+        type: 'loop',
+        perPage: 1,
+        autoplay: true,
+        drag: 'free',
       }
-    },
-    components: {
-      Splide,
-      SplideSlide,
-      labaratori,
-      auto,
-      padpiska,
-      foter
-    },
+    }
+  },
+  components: {
+    Splide,
+    SplideSlide,
+    labaratori,
+    auto,
+    padpiska,
+    foter
+  },
   mounted() {
     window.addEventListener("scroll", function () {
       let animation = document.querySelector(".animation");
@@ -138,10 +147,11 @@
 }
 </script>
 <style lang="scss" scoped>
-.all{
+.all {
   position: relative;
 }
-.animation{
+
+.animation {
   position: fixed;
   right: 100px;
   top: 745px;
@@ -352,14 +362,380 @@ li {
   width: 0;
 }
 
-//li{
-//  width: 406px !important;
-//}
 [data-aos=fade-right] {
   transform: translate3d(1000px, 0, 0);
 }
 
 [data-aos=fade-left] {
   transform: translate3d(-1000px, 0, 0);
+}
+@media (max-width: 1700px) {
+  .filter2 {
+    .filimg1 {
+      img {
+        margin-right: 40px;
+      }
+    }
+
+    .text {
+      margin-left: 40px;
+    }
+  }
+  .filter {
+    .filimg2 {
+      img {
+        margin-left: 40px;
+      }
+    }
+
+    .text {
+      margin-right: 40px;
+
+      .hr__span {
+      }
+
+      title__menu {
+      }
+
+      .text__info {
+      }
+    }
+  }
+  .labaratori {
+    margin-left: 40px;
+    margin-right: 40px;
+
+    .labaratori__left {
+      span {
+
+      }
+
+      .labaratori__left--title {
+
+      }
+
+      .text__info {
+
+      }
+
+    }
+
+    .slide__filter {
+      .container {
+
+      }
+    }
+
+  }
+}
+@media (max-width: 1550px) {
+  .title__componiya {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .filter2 {
+    margin: 40px 0;
+
+    .text {
+      margin-right: 10px;
+
+      .hr__span {
+        margin-bottom: 20px;
+      }
+
+      .title__menu {
+        font-size: 17px;
+        line-height: 20px;
+      }
+
+      .text__info {
+        margin-top: 20px;
+
+        ul {
+          li {
+            font-size: 20px;
+            line-height: 130%;
+          }
+        }
+      }
+    }
+
+    .filimg1 {
+      img {
+        width: 400px;
+        height: 350px;
+      }
+    }
+
+  }
+  .filter {
+    .filimg2 {
+      margin-right: 10px;
+
+      img {
+        width: 400px;
+        height: 350px;
+      }
+    }
+
+    .text {
+      .hr__span {
+        margin-bottom: 20px;
+      }
+
+      .title__menu {
+        font-size: 17px;
+        line-height: 20px;
+        margin-bottom: 32px;
+      }
+
+      .text__info {
+        font-size: 12px;
+        line-height: 130%;
+      }
+    }
+  }
+  .labaratori {
+    .labaratori__left {
+      max-width: 800px;
+      margin-right: 10px;
+      span {
+        margin-bottom: 20px;
+      }
+
+      .labaratori__left--title {
+        font-size: 17px;
+        line-height: 20px;
+        margin-bottom: 32px;
+      }
+
+      .text__info {
+        font-size: 20px;
+        line-height: 130%;
+      }
+
+    }
+
+    .slide__filter {
+      width: 388px !important;
+      .container {
+            .splide{
+              .splide__arrows{
+                button{
+
+                }
+              }
+              .splide__track{
+                ul {
+                  li {
+                    width: 388px !important;
+                    .images{
+                      width: 388px !important;
+                      img{
+                        width: 388px !important;
+                      }
+                    }
+                  }
+                }
+              }
+
+
+            }
+      }
+    }
+
+  }
+}
+@media (max-width: 900px) {
+
+  .filter2 {
+    .text {
+      .hr__span {
+      }
+
+      .title__menu {
+        font-size: 17px;
+        line-height: 20px;
+      }
+
+      .text__info {
+        ul {
+          li {
+            font-size: 12px;
+            line-height: 130%;
+          }
+        }
+      }
+    }
+
+    .filimg1 {
+      img {
+        width: 246px;
+        height: 225px;
+      }
+    }
+
+  }
+
+  .filter {
+    .filimg2 {
+      img {
+        width: 246px;
+        height: 225px;
+      }
+    }
+
+    .text {
+      .hr__span {
+      }
+
+      title__menu {
+        font-size: 17px;
+        line-height: 20px;
+      }
+
+      .text__info {
+        font-size: 12px;
+        line-height: 130%;
+      }
+    }
+  }
+
+  .labaratori {
+    .labaratori__left {
+      max-width: 290px;
+      margin-right: 10px;
+      span {
+        margin-bottom: 20px;
+      }
+
+      .labaratori__left--title {
+        font-size: 17px;
+        line-height: 20px;
+        margin-bottom: 32px;
+      }
+
+      .text__info {
+        font-size: 12px;
+        line-height: 130%;
+      }
+
+    }
+
+    .slide__filter {
+      width: 219px !important;
+      height: 291px !important;
+      .container {
+        .splide{
+          .splide__arrows{
+          }
+          .splide__track{
+            width: 219px !important;
+            height: 291px !important;
+            ul {
+              li {
+                width: 219px !important;
+                height: 291px !important;
+                .images{
+                  width: 219px !important;
+                  height: 291px !important;
+                  img{
+                    width: 219px !important;
+                    height: 291px !important;
+                  }
+                }
+              }
+            }
+          }
+
+
+        }
+      }
+    }
+
+  }
+}
+@media (max-width: 650px) {
+  .filter2 {
+    padding-left: 16px;
+    padding-right: 16px;
+    flex-direction: column-reverse;
+
+    .text {
+      margin: 0;
+    }
+
+    .filimg1 {
+      margin-bottom: 20px;
+
+      img {
+        margin: 0;
+      }
+    }
+  }
+  .filter {
+    padding-left: 16px;
+    padding-right: 16px;
+    flex-direction: column;
+    .filimg2 {
+      margin-bottom: 20px;
+
+      img {
+      }
+    }
+
+    .text {
+      .hr__span {
+      }
+
+      title__menu {
+      }
+
+      .text__info {
+      }
+    }
+  }
+  .labaratori {
+    margin: 40px 0 0 0 ;
+    padding: 0  16px;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    .labaratori__left {
+max-width: unset;
+      margin-top: 20px;
+      span {
+      }
+
+      .labaratori__left--title {
+      }
+
+      .text__info {
+      }
+
+    }
+
+    .slide__filter {
+      .container {
+        .splide{
+          .splide__arrows{
+          }
+          .splide__track{
+            ul {
+              li {
+                .images{
+                  img{
+                  }
+                }
+              }
+            }
+          }
+
+
+        }
+      }
+    }
+
+  }
 }
 </style>

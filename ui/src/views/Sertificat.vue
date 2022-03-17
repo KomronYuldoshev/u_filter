@@ -18,10 +18,10 @@ export default {
     }
   },
   components: {
+    sertificat,
     auto,
     padpiska,
     foter,
-    sertificat
   },
   mounted() {
     window.addEventListener("scroll", function () {
