@@ -1,6 +1,6 @@
 <template>
   <div class="slide Fill__Slide">
-<!--    <div class="container">-->
+    <div class="container">
       <splide :options="options" class="ul">
         <splide-slide>
           <div class="filter__title">
@@ -75,7 +75,7 @@
           </div>
         </splide-slide>
       </splide>
-<!--    </div>-->
+    </div>
     <service/>
   </div>
 </template>

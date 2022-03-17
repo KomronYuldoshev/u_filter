@@ -11,38 +11,38 @@
     </a>
     <div>
       <slide/>
-      <fil/>
-      <sliderr/>
-      <labaratori/>
-      <autoscroll/>
-      <maps/>
-      <padpiska/>
-      <foter/>
+<!--      <fil/>-->
+<!--      <sliderr/>-->
+<!--      <labaratori/>-->
+<!--      <autoscroll/>-->
+<!--      <maps/>-->
+<!--      <padpiska/>-->
+<!--      <foter/>-->
     </div>
   </div>
 </template>
 <script>
 import slide from '../components/FristPage/FilterSlide'
-import fil from '../components/FristPage/SpecialFilter'
-import sliderr from '../components/FristPage/slider'
-import labaratori from '../components/FristPage/labaratori'
-import autoscroll from '../components/FristPage/autoscroll'
-import maps from '../components/FristPage/Maps'
-import padpiska from '../components/FristPage/Patpisatsiya'
-import foter from '../components/FristPage/Footer'
+// import fil from '../components/FristPage/SpecialFilter'
+// import sliderr from '../components/FristPage/slider'
+// import labaratori from '../components/FristPage/labaratori'
+// import autoscroll from '../components/FristPage/autoscroll'
+// import maps from '../components/FristPage/Maps'
+// import padpiska from '../components/FristPage/Patpisatsiya'
+// import foter from '../components/FristPage/Footer'
 export default {
   data() {
     return {}
   },
   components: {
     slide,
-    fil,
-    sliderr,
-    labaratori,
-    autoscroll,
-    maps,
-    padpiska,
-    foter
+    // fil,
+    // sliderr,
+    // labaratori,
+    // autoscroll,
+    // maps,
+    // padpiska,
+    // foter
   },
   mounted() {
     window.addEventListener("scroll", function () {
@@ -117,9 +117,9 @@ export default {
     }
   }
 }
-@media (max-width: 760px) {
-  .all{
-    zoom: 40%;
-  }
-}
+//@media (max-width: 760px) {
+//  .all{
+//    zoom: 40%;
+//  }
+//}
 </style>

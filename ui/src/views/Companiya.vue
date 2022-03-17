@@ -330,6 +330,7 @@ li {
 }
 
 .labaratori__left {
+
   transition-duration: 3s !important;
 }
 
@@ -369,6 +370,7 @@ li {
 [data-aos=fade-left] {
   transform: translate3d(-1000px, 0, 0);
 }
+
 @media (max-width: 1700px) {
   .filter2 {
     .filimg1 {
