@@ -5,9 +5,9 @@
     </div>
     <div class="text">
       Вот уже семь лет наша компания производит продукцию международного
-      <br>
+
       стандарта ISO 9001 и осуществляет поставку своей готовой продукции на
-      <br>
+
       внутренний и на внешний рынок.
     </div>
     <div class="coco">
@@ -31,10 +31,9 @@ export default {
 
 .footer{
   background-image: url("../../assets/img/footer_img.jpg");
-  width: 1920px;
+  max-width: 1920px;
   height: 780px;
   margin: auto;
-  zoom: 100%;
   .title{
     font-family: 'Marmelad-R';
     font-style: normal;
@@ -54,13 +53,14 @@ export default {
     line-height: 29px;
     text-align: center;
     color: #FFFFFF;
-    margin-bottom: 228px;
+    max-width: 950px;
+    margin: 0 auto 228px auto;
   }
   .coco{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1720px;
+    max-width: 1920px;
     margin: auto;
     .cocotext{
       font-family: Lato-Regular;
@@ -69,9 +69,10 @@ export default {
       font-size: 18px;
       line-height: 22px;
       color: #FFFFFF;
+      padding-left: 100px;
     }
     img{
-
+      padding-right: 100px;
     }
   }
 }
@@ -79,326 +80,12 @@ export default {
 </style>
 <!--=======================================-->
 <style scoped lang="scss">
-
-@media screen and (max-width: 1750px){
-
+@media screen and (max-width: 1000px){
   .footer{
     background-image: url("../../assets/img/footer_img.jpg");
-    width: 1920px;
-    height: 780px;
+    max-width: 1000px;
+    height: 369px;
     margin: auto;
-    zoom: 90%;
-    .title{
-      font-family: 'Marmelad-R';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 48px;
-      line-height: 57px;
-      text-align: center;
-      color: #FFFFFF;
-      padding-top: 214px;
-      margin-bottom: 32px;
-    }
-    .text{
-      font-family: Lato-Regular;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 24px;
-      line-height: 29px;
-      text-align: center;
-      color: #FFFFFF;
-      margin-bottom: 228px;
-    }
-    .coco{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 1720px;
-      margin: auto;
-      .cocotext{
-        font-family: Lato-Regular;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 22px;
-        color: #FFFFFF;
-      }
-      img{
-
-      }
-    }
-  }
-
-}
-
-</style>
-
-<style scoped lang="scss">
-@media screen and (max-width: 1536px){
-  .footer{
-    background-image: url("../../assets/img/footer_img.jpg");
-    width: 1920px;
-    height: 780px;
-    margin: auto;
-    zoom: 80%;
-    .title{
-      font-family: 'Marmelad-R';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 48px;
-      line-height: 57px;
-      text-align: center;
-      color: #FFFFFF;
-      padding-top: 214px;
-      margin-bottom: 32px;
-    }
-    .text{
-      font-family: Lato-Regular;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 24px;
-      line-height: 29px;
-      text-align: center;
-      color: #FFFFFF;
-      margin-bottom: 228px;
-    }
-    .coco{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 1720px;
-      margin: auto;
-      .cocotext{
-        font-family: Lato-Regular;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 22px;
-        color: #FFFFFF;
-      }
-      img{
-
-      }
-    }
-  }
-}
-</style>
-
-
-<style scoped lang="scss">
-@media screen and (max-width: 1344px){
-  .footer{
-    background-image: url("../../assets/img/footer_img.jpg");
-    width: 1920px;
-    height: 780px;
-    margin: auto;
-    zoom: 70%;
-    .title{
-      font-family: 'Marmelad-R';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 48px;
-      line-height: 57px;
-      text-align: center;
-      color: #FFFFFF;
-      padding-top: 214px;
-      margin-bottom: 32px;
-    }
-    .text{
-      font-family: Lato-Regular;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 24px;
-      line-height: 29px;
-      text-align: center;
-      color: #FFFFFF;
-      margin-bottom: 228px;
-    }
-    .coco{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 1720px;
-      margin: auto;
-      .cocotext{
-        font-family: Lato-Regular;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 22px;
-        color: #FFFFFF;
-      }
-      img{
-
-      }
-    }
-  }
-}
-</style>
-
-<style scoped lang="scss">
-@media screen and (max-width: 1526px){
-  .footer{
-    background-image: url("../../assets/img/footer_img.jpg");
-    width: 1920px;
-    height: 780px;
-    margin: auto;
-    zoom: 60%;
-    .title{
-      font-family: 'Marmelad-R';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 48px;
-      line-height: 57px;
-      text-align: center;
-      color: #FFFFFF;
-      padding-top: 214px;
-      margin-bottom: 32px;
-    }
-    .text{
-      font-family: Lato-Regular;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 24px;
-      line-height: 29px;
-      text-align: center;
-      color: #FFFFFF;
-      margin-bottom: 228px;
-    }
-    .coco{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 1720px;
-      margin: auto;
-      .cocotext{
-        font-family: Lato-Regular;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 22px;
-        color: #FFFFFF;
-      }
-      img{
-
-      }
-    }
-  }
-}
-</style>
-
-<style scoped lang="scss">
-@media screen and (max-width: 960px){
-  .footer{
-    background-image: url("../../assets/img/footer_img.jpg");
-    width: 1920px;
-    height: 780px;
-    margin: auto;
-    zoom: 50%;
-    .title{
-      font-family: 'Marmelad-R';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 48px;
-      line-height: 57px;
-      text-align: center;
-      color: #FFFFFF;
-      padding-top: 214px;
-      margin-bottom: 32px;
-    }
-    .text{
-      font-family: Lato-Regular;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 24px;
-      line-height: 29px;
-      text-align: center;
-      color: #FFFFFF;
-      margin-bottom: 228px;
-    }
-    .coco{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 1720px;
-      margin: auto;
-      .cocotext{
-        font-family: Lato-Regular;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 22px;
-        color: #FFFFFF;
-      }
-      img{
-
-      }
-    }
-  }
-}
-</style>
-
-<style scoped lang="scss">
-@media screen and (max-width: 768px){
-  .footer{
-    background-image: url("../../assets/img/footer_img.jpg");
-    width: 1920px;
-    height: 780px;
-    margin: auto;
-    zoom: 40%;
-    .title{
-      font-family: 'Marmelad-R';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 48px;
-      line-height: 57px;
-      text-align: center;
-      color: #FFFFFF;
-      padding-top: 214px;
-      margin-bottom: 32px;
-    }
-    .text{
-      font-family: Lato-Regular;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 24px;
-      line-height: 29px;
-      text-align: center;
-      color: #FFFFFF;
-      margin-bottom: 228px;
-    }
-    .coco{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 1720px;
-      margin: auto;
-      .cocotext{
-        font-family: Lato-Regular;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 22px;
-        color: #FFFFFF;
-      }
-      img{
-
-      }
-    }
-  }
-}
-</style>
-
-<!--=====================================-->
-
-<style scoped lang="scss">
-@media screen and (max-width: 576px){
-  .footer{
-    background-image: url("../../assets/img/footer_img.jpg");
-    width: 360px;
-    height: 420px;
-    margin: auto;
-
     .title{
       font-family: 'Marmelad-R';
       font-style: normal;
@@ -407,37 +94,97 @@ export default {
       line-height: 33px;
       text-align: center;
       color: #FFFFFF;
-      padding-top: 60px;
+      padding-top: 64px;
       margin-bottom: 24px;
     }
     .text{
       font-family: Lato-Regular;
       font-style: normal;
       font-weight: normal;
-      font-size: 12px;
-      line-height: 14px;
+      font-size: 14px;
+      line-height: 17px;
       text-align: center;
       color: #FFFFFF;
-      margin-bottom: 160px;
+
+      max-width: 380px;
+      margin: 0 auto 120px auto;
     }
     .coco{
-
-
-
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: auto;
       .cocotext{
         font-family: Lato-Regular;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 12px;
         line-height: 14px;
         color: #FFFFFF;
-        text-align: center;
+        padding-left: 40px;
       }
       img{
-        width: 62px;
+        padding-right: 40px;
+        width: 100px;
+
       }
     }
   }
 }
 </style>
->>>>>>> origin/master
+<!--=======================================-->
+<style scoped lang="scss">
+@media screen and (max-width: 730px){
+  .footer{
+    background-image: url("../../assets/img/footer_img.jpg");
+    max-width: 1000px;
+    height: 369px;
+    margin: auto;
+    .title{
+      font-family: 'Marmelad-R';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 33px;
+      text-align: center;
+      color: #FFFFFF;
+      padding-top: 64px;
+      margin-bottom: 24px;
+    }
+    .text{
+      font-family: Lato-Regular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      color: #FFFFFF;
+
+      max-width: 380px;
+      margin: 0 auto 120px auto;
+    }
+    .coco{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: auto;
+      .cocotext{
+        font-family: Lato-Regular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFFFFF;
+        padding-left: 40px;
+      }
+      img{
+        padding-right: 40px;
+        width: 100px;
+
+      }
+    }
+  }
+}
+</style>
