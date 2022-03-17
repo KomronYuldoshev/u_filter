@@ -102,10 +102,10 @@
         </div>
       </div>
     </div>
-        <labaratori/>
-        <auto/>
-        <padpiska/>
-        <foter/>
+    <labaratori/>
+    <auto/>
+    <padpiska/>
+    <foter/>
   </div>
 </template>
 <script>
@@ -116,6 +116,7 @@ import labaratori from '../components/FristPage/labaratori'
 import auto from '../components/FristPage/autoscroll'
 import padpiska from '../components/FristPage/Patpisatsiya'
 import foter from '../components/FristPage/Footer'
+
 export default {
   data() {
     return {
@@ -430,6 +431,7 @@ li {
 
   }
 }
+
 @media (max-width: 1550px) {
   .title__componiya {
     font-size: 24px;
@@ -446,8 +448,8 @@ li {
       }
 
       .title__menu {
-        font-size: 17px;
-        line-height: 20px;
+        font-size: 32px;
+        line-height: 37px;
       }
 
       .text__info {
@@ -486,13 +488,13 @@ li {
       }
 
       .title__menu {
-        font-size: 17px;
-        line-height: 20px;
+        font-size: 32px;
+        line-height: 37px;
         margin-bottom: 32px;
       }
 
       .text__info {
-        font-size: 12px;
+        font-size: 20px;
         line-height: 130%;
       }
     }
@@ -501,13 +503,14 @@ li {
     .labaratori__left {
       max-width: 800px;
       margin-right: 10px;
+
       span {
         margin-bottom: 20px;
       }
 
       .labaratori__left--title {
-        font-size: 17px;
-        line-height: 20px;
+        font-size: 32px;
+        line-height: 37px;
         margin-bottom: 32px;
       }
 
@@ -520,36 +523,40 @@ li {
 
     .slide__filter {
       width: 388px !important;
-      .container {
-            .splide{
-              .splide__arrows{
-                button{
 
-                }
-              }
-              .splide__track{
-                ul {
-                  li {
+      .container {
+        .splide {
+          .splide__arrows {
+            button {
+
+            }
+          }
+
+          .splide__track {
+            ul {
+              li {
+                width: 388px !important;
+
+                .images {
+                  width: 388px !important;
+
+                  img {
                     width: 388px !important;
-                    .images{
-                      width: 388px !important;
-                      img{
-                        width: 388px !important;
-                      }
-                    }
                   }
                 }
               }
-
-
             }
+          }
+
+
+        }
       }
     }
 
   }
 }
-@media (max-width: 900px) {
 
+@media (max-width: 900px) {
   .filter2 {
     .text {
       .hr__span {
@@ -578,7 +585,6 @@ li {
     }
 
   }
-
   .filter {
     .filimg2 {
       img {
@@ -590,23 +596,21 @@ li {
     .text {
       .hr__span {
       }
-
-      title__menu {
+      .title__menu {
         font-size: 17px;
         line-height: 20px;
       }
-
       .text__info {
         font-size: 12px;
         line-height: 130%;
       }
     }
   }
-
   .labaratori {
     .labaratori__left {
       max-width: 290px;
       margin-right: 10px;
+
       span {
         margin-bottom: 20px;
       }
@@ -627,21 +631,26 @@ li {
     .slide__filter {
       width: 219px !important;
       height: 291px !important;
+
       .container {
-        .splide{
-          .splide__arrows{
+        .splide {
+          .splide__arrows {
           }
-          .splide__track{
+
+          .splide__track {
             width: 219px !important;
             height: 291px !important;
+
             ul {
               li {
                 width: 219px !important;
                 height: 291px !important;
-                .images{
+
+                .images {
                   width: 219px !important;
                   height: 291px !important;
-                  img{
+
+                  img {
                     width: 219px !important;
                     height: 291px !important;
                   }
@@ -657,6 +666,7 @@ li {
 
   }
 }
+
 @media (max-width: 650px) {
   .filter2 {
     padding-left: 16px;
@@ -679,6 +689,7 @@ li {
     padding-left: 16px;
     padding-right: 16px;
     flex-direction: column;
+
     .filimg2 {
       margin-bottom: 20px;
 
@@ -698,14 +709,15 @@ li {
     }
   }
   .labaratori {
-    margin: 40px 0 0 0 ;
-    padding: 0  16px;
+    margin: 40px 0 0 0;
+    padding: 0 16px;
     flex-direction: column-reverse;
     align-items: center;
 
     .labaratori__left {
-max-width: unset;
+      max-width: unset;
       margin-top: 20px;
+
       span {
       }
 
@@ -719,14 +731,15 @@ max-width: unset;
 
     .slide__filter {
       .container {
-        .splide{
-          .splide__arrows{
+        .splide {
+          .splide__arrows {
           }
-          .splide__track{
+
+          .splide__track {
             ul {
               li {
-                .images{
-                  img{
+                .images {
+                  img {
                   }
                 }
               }
