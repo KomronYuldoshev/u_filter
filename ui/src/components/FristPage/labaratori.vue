@@ -159,8 +159,8 @@ li {
       }
 
       .labaratori__left--title {
-        font-size: 17px;
-        line-height: 20px;
+        font-size: 32px;
+        line-height: 37px;
         margin-bottom: 32px;
       }
 

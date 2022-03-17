@@ -1,31 +1,94 @@
-.services{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -173px;
-  .tip__service{
+.all_services {
+  overflow-x: auto;
+  .services {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 284px;
-    height: 220px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
-    cursor: pointer;
-    &:first-child{
-      border-radius: 10px 0px 0px 10px;
+    justify-content: center;
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.05);
+    .tip__service {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 284px;
+      height: 220px;
+      background: #FFFFFF;
+      box-shadow: 0 4px 40px rgba(0, 0, 0, 0.05);
+      cursor: pointer;
+
+      &:first-child {
+        border-radius: 10px 0px 0px 10px;
+      }
+
+      &:last-child {
+        border-radius: 0px 10px 10px 0px;
+      }
+
+      .tip__service--text {
+        font-size: 24px;
+        line-height: 29px;
+        color: var(--black);
+      }
     }
-    &:last-child{
-      border-radius: 0px 10px 10px 0px;
+  }
+}
+@media (max-width: 1250px) {
+  .all_services {
+    .services {
+
+      .tip__service {
+        .tip__service--img {
+          img {
+            width: 75px;
+            height: 75px;
+          }
+        }
+
+        .tip__service--text {
+          font-size: 18px;
+          line-height: 20px;
+        }
+      }
     }
-    .tip__service--text{
-      font-size: 24px;
-      line-height: 29px;
-      color: var(--black);
+  }
+}
+@media (max-width: 950px) {
+  .all_services {
+    .services {
+      .tip__service {
+        width: 136px;
+        height: 120px;
+
+        .tip__service--img {
+          img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+
+        .tip__service--text {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .all_services {
+    .services {
+      white-space: nowrap;
+      min-width: 680px;
+
+      .tip__service {
+        .tip__service--img {
+          img {
+          }
+        }
+
+        .tip__service--text {
+        }
+      }
     }
   }
 }
