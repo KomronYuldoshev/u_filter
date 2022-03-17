@@ -117,9 +117,5 @@ export default {
     }
   }
 }
-@media (max-width: 760px) {
-  .all{
-    zoom: 40%;
-  }
-}
+
 </style>

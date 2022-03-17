@@ -126,7 +126,7 @@ export default {
       }
       img{
         padding-right: 40px;
-        width: 100px;
+        width: 150px;
 
       }
     }
@@ -160,7 +160,7 @@ export default {
       line-height: 17px;
       text-align: center;
       color: #FFFFFF;
-
+      padding: 0 10px 0 10px;
       max-width: 380px;
       margin: 0 auto 120px auto;
     }
@@ -181,7 +181,7 @@ export default {
       }
       img{
         padding-right: 40px;
-        width: 100px;
+        width: 150px;
 
       }
     }
