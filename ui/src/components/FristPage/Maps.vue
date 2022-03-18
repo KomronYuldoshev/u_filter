@@ -16,9 +16,7 @@ export default {
 <style scoped lang="scss">
 .maps{
   margin-bottom: 120px;
-  width: 1920px;
-  margin: auto;
-
+  width: 100%;
   .map__title{
     font-family: 'Marmelad-R';
     font-style: normal;
