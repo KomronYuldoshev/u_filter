@@ -104,7 +104,7 @@
     </div>
     <labaratori/>
     <auto/>
-    <padpiska/>
+    <subscribe/>
     <foter/>
   </div>
 </template>
@@ -114,7 +114,7 @@ import {createSlides} from "../../utils/slides";
 import '../assets/slide/splide.min.css'
 import labaratori from '../components/FristPage/labaratori'
 import auto from '../components/FristPage/autoscroll'
-import padpiska from '../components/FristPage/Patpisatsiya'
+import subscribe from '../components/FristPage/SubscribeUs'
 import foter from '../components/FristPage/Footer'
 
 export default {
@@ -136,7 +136,7 @@ export default {
     SplideSlide,
     labaratori,
     auto,
-    padpiska,
+    subscribe,
     foter
   },
   mounted() {
