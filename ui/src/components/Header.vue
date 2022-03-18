@@ -1,15 +1,15 @@
 <template>
   <div class="all">
     <header class="header">
-      <div class="active_menu"  :class=" isActive ? 'active' : ''  " @click="menu">
-      <span></span>
-      </div>
       <div class="logo">
+        <div class="active_menu"  :class=" isActive ? 'active' : ''  " @click="menu">
+          <span></span>
+        </div>
         <a href="/">
           <img src="../assets/img/logo.svg" alt="">
         </a>
       </div>
-      <div class="menu">
+      <div class="menu"  @mouseup="menu"    :class=" isOpen ? 'open' : ''  ">
         <ul>
           <li v-for="menu in menus" :key="menu.index">
             <router-link
@@ -34,10 +34,14 @@
         </div>
       </div>
     </header>
+    <div :class=" isOpen ? 'bg_all' : '' "  @mouseup="menu">
+    </div>
   </div>
 </template>
 
+
 <script>
+
 export default {
   data() {
     return {
@@ -70,7 +74,8 @@ export default {
           lang: 'UZ'
         }
       ],
-      isActive: false
+      isActive: false,
+      isOpen: false,
 
     }
   },
@@ -86,7 +91,10 @@ export default {
     },
     menu(){
       this.isActive = !this.isActive
-    }
+      this.isOpen = !this.isOpen
+    },
+
+
 
   },
   mounted() {

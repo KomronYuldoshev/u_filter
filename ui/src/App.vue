@@ -3,9 +3,9 @@
     <div id="nav">
       <v-app id="inspire">
         <fil-head/>
-<!--        <router-view />-->
+        <router-view />
         <div class="pro" v-if="$route.name=='product'">
-<!--          <product/>-->
+          <product/>
         </div>
       </v-app>
     </div>
@@ -14,7 +14,7 @@
 
 <script>
 import FilHead from './components/Header.vue'
-// import product from './components/SecondPage/LeftMenu'
+import product from './components/SecondPage/LeftMenu'
 
 export default {
   data() {
@@ -25,7 +25,7 @@ export default {
   },
   components: {
     FilHead,
-    // product
+    product
   },
 }
 </script>
