@@ -2,25 +2,25 @@
   <div class="all">
     <sertificat/>
     <auto/>
-    <padpiska/>
+    <subscribe/>
     <foter/>
   </div>
 </template>
 <script>
 import sertificat from '../components/sertificat/sertificat'
 import auto from '../components/FristPage/autoscroll'
-import padpiska from '../components/FristPage/Patpisatsiya'
+import subscribe from '../components/FristPage/SubscribeUs'
+
 import foter from '../components/FristPage/Footer'
+
 export default {
   data() {
-    return {
-
-    }
+    return {}
   },
   components: {
     sertificat,
     auto,
-    padpiska,
+    subscribe,
     foter,
   },
   mounted() {
@@ -32,10 +32,11 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.all{
+.all {
   position: relative;
 }
-.animation{
+
+.animation {
   position: fixed;
   right: 100px;
   top: 745px;

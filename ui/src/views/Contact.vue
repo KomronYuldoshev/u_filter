@@ -5,14 +5,14 @@
     </div>
     <maps/>
     <auto/>
-    <padpiska/>
+    <subscribe/>
     <foter/>
   </div>
 </template>
 <script>
 import auto from '../components/FristPage/autoscroll'
-import maps from '../components/FristPage/Maps'
-import padpiska from '../components/FristPage/Patpisatsiya'
+import maps from '../components/FristPage/MapSite'
+import subscribe from '../components/FristPage/SubscribeUs'
 import foter from '../components/FristPage/Footer'
 export default {
   data() {
@@ -23,7 +23,7 @@ export default {
   components: {
     auto,
     maps,
-    padpiska,
+    subscribe,
     foter,
   },
   mounted() {
