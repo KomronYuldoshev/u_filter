@@ -41,7 +41,10 @@ html {
   --white: #EDF7FF;
   --grey: #4F4F4F;
 }
-
+body{
+  max-width: 1920px;
+  margin: 0 auto;
+}
 @font-face {
   font-family: 'Lato-Regular';
   src: url(assets/font/Lato-Regular.ttf);
