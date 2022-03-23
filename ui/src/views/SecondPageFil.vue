@@ -44,13 +44,13 @@ export default {
   margin: auto;
   height: 100%;
   justify-content: space-between;
+  margin-left: 508px;
 
   span {
     width: 2px;
     height: 100%;
     background: #E1E1E1;
     display: block;
-    margin-left: 436px;
   }
 }
 
@@ -118,5 +118,9 @@ export default {
     }
   }
 }
-
+@media (max-width: 700px) {
+  .rightpage{
+    margin-left: unset;
+  }
+}
 </style>

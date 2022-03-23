@@ -10,7 +10,6 @@
       </div>
     </a>
     <div class="rightpage">
-<!--      <left/>-->
       <span></span>
       <right/>
     </div>
@@ -45,13 +44,21 @@ export default {
   margin: auto;
   height: 100%;
   justify-content: space-between;
+  margin-left: 508px;
+  &::before{
+    content: '';
+    width: 2px;
+    height: 100%;
+    background: #E1E1E1;
+    display: block;
+    position: absolute;
+  }
 
   span {
     width: 2px;
     height: 100%;
     background: #E1E1E1;
     display: block;
-    margin-left: 436px;
   }
 }
 

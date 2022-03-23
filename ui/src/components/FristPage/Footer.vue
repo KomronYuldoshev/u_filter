@@ -31,10 +31,10 @@ export default {
 
 .footer{
   background-image: url("../../assets/img/footer_img.jpg");
-  width: 1920px;
+  width: 100%;
   height: 780px;
   margin: auto;
-  zoom: 100%;
+  //zoom: 100%;
   .title{
     font-family: 'Marmelad-R';
     font-style: normal;
@@ -60,8 +60,8 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1720px;
     margin: auto;
+    padding: 0px 100px;
     .cocotext{
       font-family: Lato-Regular;
       font-style: normal;
@@ -84,10 +84,10 @@ export default {
 
   .footer{
     background-image: url("../../assets/img/footer_img.jpg");
-    width: 1920px;
+    width: 100%;
     height: 780px;
     margin: auto;
-    zoom: 90%;
+    //zoom: 90%;
     .title{
       font-family: 'Marmelad-R';
       font-style: normal;
@@ -113,7 +113,7 @@ export default {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 1720px;
+      width: 100%;
       margin: auto;
       .cocotext{
         font-family: Lato-Regular;
@@ -137,10 +137,10 @@ export default {
 @media screen and (max-width: 1536px){
   .footer{
     background-image: url("../../assets/img/footer_img.jpg");
-    width: 1920px;
+    width: 100%;
     height: 780px;
     margin: auto;
-    zoom: 80%;
+    //zoom: 80%;
     .title{
       font-family: 'Marmelad-R';
       font-style: normal;
@@ -166,7 +166,7 @@ export default {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 1720px;
+      width: 100%;
       margin: auto;
       .cocotext{
         font-family: Lato-Regular;
@@ -189,10 +189,9 @@ export default {
 @media screen and (max-width: 1344px){
   .footer{
     background-image: url("../../assets/img/footer_img.jpg");
-    width: 1920px;
     height: 780px;
     margin: auto;
-    zoom: 70%;
+    //zoom: 70%;
     .title{
       font-family: 'Marmelad-R';
       font-style: normal;
@@ -218,7 +217,6 @@ export default {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 1720px;
       margin: auto;
       .cocotext{
         font-family: Lato-Regular;
@@ -240,10 +238,9 @@ export default {
 @media screen and (max-width: 1526px){
   .footer{
     background-image: url("../../assets/img/footer_img.jpg");
-    width: 1920px;
     height: 780px;
     margin: auto;
-    zoom: 60%;
+    //zoom: 60%;
     .title{
       font-family: 'Marmelad-R';
       font-style: normal;
@@ -269,7 +266,6 @@ export default {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 1720px;
       margin: auto;
       .cocotext{
         font-family: Lato-Regular;
@@ -291,10 +287,9 @@ export default {
 @media screen and (max-width: 960px){
   .footer{
     background-image: url("../../assets/img/footer_img.jpg");
-    width: 1920px;
     height: 780px;
     margin: auto;
-    zoom: 50%;
+    //zoom: 50%;
     .title{
       font-family: 'Marmelad-R';
       font-style: normal;
@@ -315,13 +310,14 @@ export default {
       text-align: center;
       color: #FFFFFF;
       margin-bottom: 228px;
+      padding: 0px;
     }
     .coco{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 1720px;
       margin: auto;
+      padding: 0px 30px;
       .cocotext{
         font-family: Lato-Regular;
         font-style: normal;
@@ -329,9 +325,6 @@ export default {
         font-size: 18px;
         line-height: 22px;
         color: #FFFFFF;
-      }
-      img{
-
       }
     }
   }
@@ -342,10 +335,8 @@ export default {
 @media screen and (max-width: 768px){
   .footer{
     background-image: url("../../assets/img/footer_img.jpg");
-    width: 1920px;
     height: 780px;
     margin: auto;
-    zoom: 40%;
     .title{
       font-family: 'Marmelad-R';
       font-style: normal;
@@ -369,9 +360,9 @@ export default {
     }
     .coco{
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      width: 1720px;
       margin: auto;
       .cocotext{
         font-family: Lato-Regular;
@@ -380,9 +371,8 @@ export default {
         font-size: 18px;
         line-height: 22px;
         color: #FFFFFF;
-      }
-      img{
-
+        margin-top: -70px;
+        margin-bottom: 50px;
       }
     }
   }
@@ -395,7 +385,6 @@ export default {
 @media screen and (max-width: 576px){
   .footer{
     background-image: url("../../assets/img/footer_img.jpg");
-    width: 360px;
     height: 420px;
     margin: auto;
 
@@ -434,7 +423,6 @@ export default {
         text-align: center;
       }
       img{
-        width: 62px;
       }
     }
   }

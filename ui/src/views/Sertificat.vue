@@ -9,7 +9,7 @@
 <script>
 import sertificat from '../components/sertificat/sertificat'
 import auto from '../components/FristPage/autoscroll'
-import padpiska from '../components/FristPage/Patpisatsiya'
+import padpiska from '../components/FristPage/SubscribeUs'
 import foter from '../components/FristPage/Footer'
 export default {
   data() {
@@ -97,7 +97,7 @@ export default {
 }
 
 .companiya__main {
-  padding-top: 240px;
+  padding-top: 270px;
 }
 
 .filter {

@@ -13,7 +13,7 @@ const routes = [
   {
     path: '/product',
     name: 'product',
-    component: () => import('../views/SecondPage')
+    component: () => import('../views/SecondPageFil')
   },
   // {
   //   path: '/product',

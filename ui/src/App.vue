@@ -139,4 +139,10 @@ select {
   top: 240px;
   left: 47px;
 }
+@media (max-width: 1248px) {
+  .animation{
+    right: 15px !important;
+    top: 630px !important;
+  }
+}
 </style>

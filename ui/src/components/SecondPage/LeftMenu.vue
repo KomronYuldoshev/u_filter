@@ -44,6 +44,7 @@
     </ul>
   </div>
 </template>
+
 <style lang="scss" scoped>
 .left__menu--main{
   //width: 30%;
@@ -99,6 +100,11 @@
         transition: all ease 1s;
       }
     }
+  }
+}
+@media (max-width: 700px) {
+  .left__menu--main{
+    left: -1000px;
   }
 }
 </style>

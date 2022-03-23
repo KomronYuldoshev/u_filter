@@ -25,6 +25,9 @@
         </form>
       </div>
     </div>
+
+
+
     <div class="filter">
       <div class="img">
         <img src="../../assets/img/filter1.png" alt="">
@@ -40,6 +43,9 @@
         </div>
       </div>
     </div>
+
+
+
     <div class="filter2">
       <div class="text data__aos" data-aos="fade-left">
         <span class="hr__span"></span>
@@ -54,6 +60,9 @@
         <img src="../../assets/img/filter2.png" alt="">
       </div>
     </div>
+
+
+
     <div class="video">
       <img src="../../assets/img/video.png" alt="">
     </div>

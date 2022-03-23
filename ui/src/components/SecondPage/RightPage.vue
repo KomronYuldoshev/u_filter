@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="all__cards">
     <div class="top">
       <div class="input__btn">
         <div class="input">
@@ -203,8 +203,11 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.all__cards{
+  margin-left: 64px;
+}
   .top {
-    margin-left: 100px;
+    //margin-left: 100px;
     .input__btn{
       width: 1210px;
       height: 67px;
@@ -271,7 +274,7 @@ export default {
   }
   .special__filters{
     //margin-top: 300px;
-    margin-left: 100px;
+    //margin-left: 100px;
     .special__filters--check{
       form{
         display: flex;
@@ -343,9 +346,8 @@ export default {
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
     height: 450px;
     position: relative;
-    margin-left: 32px;
-    margin-top: 64px;
-    width: 406px;
+    margin: 32px 40px 32px 0px;
+    width: 30%;
     .top__card{
       padding: 0px 24px;
       .img__text{
@@ -392,6 +394,11 @@ export default {
       position: absolute;
       bottom: 0;
       padding: 12px;
+    }
+  } 
+  @media (max-width: 820px) {
+    .card{
+      width: 45%;
     }
   }
 </style>

@@ -19,29 +19,29 @@
     <div class="info_part">
       <div class="part">
         <div class="number">
-          <a href=""> <img src="../../assets/img/number.svg" alt=""></a>
-          <p>(+998 95) 607 54 00</p>
+          <a href="tel:=+998 95 607 54 00"> <img src="../../assets/img/number.svg" alt=""></a>
+          <a href="tel:=+998 95 607 54 00">(+998 95) 607 54 00</a>
         </div>
         <div class="number">
-          <a href=""><img src="../../assets/img/number.svg" alt=""></a>
-          <p>(+998 90) 717 54 54</p>
+          <a href="tel:=+998 91 331 00 47"><img src="../../assets/img/number.svg" alt=""></a>
+          <a href="tel:=+998 91 331 00 47">(+998 90) 717 54 54</a>
         </div>
 
       </div>
       <div class="part">
         <div class="number">
-          <a href=""><img src="../../assets/img/number.svg" alt=""></a>
-          <p>(+998 91) 331 00 47</p>
+          <a href="tel:=+998 95 607 54 00"><img src="../../assets/img/number.svg" alt=""></a>
+          <a href="tel:=+998 95 607 54 00">(+998 91) 331 00 47</a>
         </div>
         <div class="number">
-          <a href=""> <img src="../../assets/img/location.svg" alt=""></a>
-          <p>Адрес: Узбекистан, г.Навои</p>
+          <a href="https://www.google.com/maps/@40.0753355,65.3673116,1680m/data=!3m1!1e3" target="_blank"> <img src="../../assets/img/location.svg" alt=""></a>
+          <a href="https://www.google.com/maps/@40.0753355,65.3673116,1680m/data=!3m1!1e3" target="_blank">Адрес: Узбекистан, г.Навои</a>
         </div>
       </div>
       <div class="part">
         <div class="number">
           <a href=""> <img src="../../assets/img/email.svg" alt=""></a>
-          <p>ifa-65@mail.ru</p>
+          <a href="mailto:ifa-65@mail.ru">ifa-65@mail.ru</a>
         </div>
         <div class="number">
           <a href=""> <img src="../../assets/img/instagram.svg" alt=""> </a>
@@ -200,27 +200,167 @@ export default {
 }
 
 @media (max-width: 1700px) {
-  .subscribe_block {
-    .sub_info {
-      flex-direction: column;
+  .subscribe_us {
+    padding: 0 40px;
 
-      .sub {
-        margin-bottom: 23px;
+    .subscribe_block {
+      .sub_info {
+        flex-direction: column;
+
+        .sub {
+          margin-bottom: 23px;
+        }
       }
     }
   }
+
 }
 
 @media (max-width: 1350px) {
-  .subscribe_block {
-    .sub_info {
-      flex-direction: column;
 
-      .sub {
-        margin-bottom: 23px;
+  .subscribe_us {
+    h1 {
+      font-size: 28px;
+      line-height: 33px;
+      margin-bottom: 30px;
+    }
+
+    .subscribe_block {
+      padding: 20px 50px 12px 30px;
+
+      .sub_info {
+        flex-direction: column;
+
+        .sub {
+          margin-bottom: 20px;
+          margin-right: 0;
+
+          a {
+            img {
+              width: 50px;
+              height: 50px;
+              margin-right: 10px;
+            }
+          }
+
+          p {
+            font-size: 18px;
+            width: auto;
+            line-height: 22px;
+          }
+        }
+
+        .adding {
+          p {
+            font-size: 12px;
+            line-height: 130%;
+          }
+        }
+      }
+
+      button {
+        width: 189px;
+        padding: 15px 0;
+        font-size: 16px;
+        line-height: 19px;
+
+      }
+    }
+
+    .info_part {
+      margin: 40px 0 60px 0;
+      padding: 0 16px;
+
+      .part {
+        .number {
+          a {
+            &:nth-child(2) {
+              margin-left: 16px;
+            }
+
+            &:nth-child(3) {
+              margin-left: 16px;
+            }
+
+            img {
+              width: 25px;
+              height: 25px;
+
+            }
+          }
+
+          p {
+            margin-left: 10px;
+            font-size: 12px;
+            line-height: 14px;
+          }
+        }
+      }
+
+    }
+  }
+
+}
+
+@media (max-width: 750px) {
+  .subscribe_us {
+    padding: 0;
+
+    h1 {
+      padding-left: 16px;
+      margin-bottom: 23px;
+    }
+
+    .subscribe_block {
+      padding: 10px 16px 20px 16px;
+      flex-direction: column;
+      align-items: start;
+
+      .sub_info {
+        margin-bottom: 46px;
+
+        .sub {
+          margin-bottom: 24px;
+        }
       }
     }
   }
 }
 
+@media (max-width: 500px) {
+
+  .subscribe_us {
+    .info_part {
+      flex-direction: column;
+      align-items: start;
+      margin: 24px 0 60px 0;
+      .part {
+        &:nth-child(3){
+          .number {
+            &:nth-child(2){
+              margin-bottom: 0;
+            }
+          }
+        }
+        .number {
+          margin-bottom: 24px;
+          &:nth-child(1){
+            margin-bottom: 24px;
+          }
+          a {
+            img {
+              width: 25px;
+              height: 25px;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+}
+a{
+  color: #303439;
+}
 </style>

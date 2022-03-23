@@ -4,15 +4,15 @@
       Контакты
     </div>
     <maps/>
-    <auto/>
+    <autoscroll/>
     <padpiska/>
     <foter/>
   </div>
 </template>
 <script>
-import auto from '../components/FristPage/autoscroll'
-import maps from '../components/FristPage/Maps'
-import padpiska from '../components/FristPage/Patpisatsiya'
+import autoscroll from '../components/FristPage/autoscroll'
+import maps from '../components/FristPage/MapSite'
+import padpiska from '../components/FristPage/SubscribeUs'
 import foter from '../components/FristPage/Footer'
 export default {
   data() {
@@ -21,7 +21,7 @@ export default {
     }
   },
   components: {
-    auto,
+    autoscroll,
     maps,
     padpiska,
     foter,
@@ -267,4 +267,19 @@ li {
 [data-aos=fade-left] {
   transform: translate3d(-1000px, 0, 0);
 }
+@media (max-width: 1000px) {
+  .contact__title{
+    font-size: 40px;
+  }
+}
+@media (max-width: 800px) {
+  .contact__title{
+    margin-top: 110px;
+  }
+}
+//@media (max-width: 480px) {
+//  .contact__title{
+//    font-size: 24px;
+//  }
+//}
 </style>

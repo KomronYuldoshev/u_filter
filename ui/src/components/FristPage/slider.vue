@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="first__slide">
     <div class="title__text">
       Новые фильтры
     </div>
@@ -316,6 +316,75 @@ export default {
   },
 }
 </script>
+<style lang="scss">
+@media (max-width: 1714px) {
+  .first__slide{
+    .slide__filter{
+      .splide__arrow:first-child{
+        left: 10px;
+        background: #5ca8f2 !important;
+      }
+      .splide__arrow:nth-child(2){
+        right: 10px;
+        background: #5ca8f2 !important;
+      }
+    }
+  }
+}
+@media (max-width: 448px) {
+  .slide__filter{
+    ul{
+      li{
+        width: 218px !important;
+        margin-right: 20px !important;
+        .card{
+          height: 240px !important;
+          .top{
+            .img__text{
+              .img{
+                img{
+                  width: 40px;
+                }
+              }
+              .text{
+                font-size: 12px !important;
+                line-height: 14px !important;
+              }
+            }
+          }
+          .main__img{
+            img{
+              width: 140px;
+            }
+          }
+          .fil__id{
+            font-size: 10px !important;
+            line-height: 12px !important;
+          }
+        }
+      }
+    }
+  }
+  body{
+    .splide__slide.is-visible[data-v-16a163f3]{
+      margin-right: 20px !important;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .title__text{
+    margin-top: 45px !important;
+    margin-bottom: 45px !important;
+  }
+}
+@media (max-width: 561px) {
+  .title__text{
+    font-size: 28px !important;
+    line-height: 33px !important;
+    margin-left: 16px !important;
+  }
+}
+</style>
 <style scoped lang="scss">
 .title__text{
   font-size: 48px;
@@ -327,6 +396,7 @@ export default {
   margin-bottom: 92px;
 }
 .slide__filter{
+  padding: 20px;
   .card{
     background: #FFFFFF;
     border: 2.5px solid #2C83C5;

@@ -27,8 +27,8 @@ import fil from '../components/FristPage/SpecialFilter'
 import sliderr from '../components/FristPage/slider'
 import labaratori from '../components/FristPage/labaratori'
 import autoscroll from '../components/FristPage/autoscroll'
-import maps from '../components/FristPage/Maps'
-import padpiska from '../components/FristPage/Patpisatsiya'
+import maps from '../components/FristPage/MapSite'
+import padpiska from '../components/FristPage/SubscribeUs'
 import foter from '../components/FristPage/Footer'
 export default {
   data() {
@@ -55,6 +55,7 @@ export default {
 <style lang="scss" scoped>
 .all {
   position: relative;
+  //display: none;
 }
 
 .animation {
@@ -119,7 +120,7 @@ export default {
 }
 @media (max-width: 760px) {
   .all{
-    zoom: 40%;
+    //zoom: 40%;
   }
 }
 </style>
