@@ -13,32 +13,30 @@
     form {
       display: flex;
       align-items: center;
+      margin: 92px 0;
 
+      .selected {
+        display: none;
+      }
       .radio {
-        width: 360px;
+        padding: 0 24px;
         height: 54px;
         display: flex;
         align-items: center;
         justify-content: center;
         border: 1px solid #B2B2B2;
-        margin: 92px 0;
-
         &:nth-child(1) {
           border-radius: 0px 0px 0px 10px;
-
           &.active {
             border-radius: 0px 0px 0px 10px;
           }
         }
-
         &:last-child {
           border-radius: 0px 10px 0px 0px;
-
           &.active {
             border-radius: 0px 10px 0px 0px;
           }
         }
-
         &.active {
           background: var(--blue);
           border: 1px solid var(--blue);
@@ -57,6 +55,7 @@
       color: #000;
       margin-left: 24px;
       font-family: 'Lato-Medium';
+      white-space: nowrap;
     }
 
     input {
@@ -208,6 +207,10 @@
     }
   }
 
+  .special__filters {
+    margin: 200px 0 0 40px;
+  }
+
 }
 
 @media (max-width: 1550px) {
@@ -247,6 +250,7 @@
 
   .filter2 {
     margin-bottom: 60px;
+
     .img {
       img {
         width: 400px;
@@ -275,6 +279,102 @@
     }
   }
 
+  .special__filters {
+    .special__filters--title {
+      font-size: 28px;
+      line-height: 33px;
+    }
+
+    .special__filters--check {
+      form {
+        margin: 30px 0 40px 0;
+
+        .radio {
+          height: 35px;
+          padding: 0 11px;
+
+          input {
+            width: 17px;
+            height: 17px;
+          }
+
+          label {
+            margin-left: 8px;
+            font-size: 15px;
+            line-height: 12px;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .special__filters {
+    .special__filters--title {
+    }
+
+    .special__filters--check {
+      form {
+        position: relative;
+        flex-direction: column;
+        align-items: start;
+
+        .selected {
+          height: 35px;
+          display: flex;
+          align-items: center;
+          justify-content: start;
+          padding: 0 11px;
+          position: relative;
+          width: 328px;
+          border: 1px solid #B2B2B2 !important;
+          border-radius: 0 10px;
+
+          input {
+            width: 17px;
+            height: 17px;
+            border: 6px solid white;
+            border-radius: 50px;
+          }
+
+          label {
+            color: #000;
+            font-family: "Lato-Medium";
+            margin-left: 8px;
+            font-size: 15px;
+            line-height: 12px;
+          }
+
+          img {
+            position: absolute;
+            top: 5px;
+            right: 18px;
+          }
+        }
+
+        .radio {
+          width: 328px;
+          justify-content: start;
+          border-radius: 0 10px !important;
+
+          &.active {
+
+
+          }
+
+          input {
+
+          }
+
+          label {
+
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 900px) {

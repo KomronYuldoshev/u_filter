@@ -288,20 +288,21 @@
   </div>
 </template>
 <script>
-import { Splide, SplideSlide } from '@splidejs/vue-splide';
-import { createSlides } from "../../../utils/slides";
+import {Splide, SplideSlide} from '@splidejs/vue-splide';
+import {createSlides} from "../../../utils/slides";
 import '../../assets/slide/splide.min.css'
+
 export default {
   data() {
     return {
       options: {
-        rewind : true,
-        gap    : '5rem',
+        rewind: true,
+        gap: '5rem',
         slides: createSlides(),
-        type   : 'loop',
+        type: 'loop',
         perPage: 1,
         autoplay: true,
-        drag   : 'free',
+        drag: 'free',
       }
     }
   },
@@ -317,7 +318,7 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-.title__text{
+.title__text {
   font-size: 48px;
   line-height: 57px;
   color: #282525;
@@ -326,21 +327,41 @@ export default {
   margin-top: 120px;
   margin-bottom: 92px;
 }
-.slide__filter{
-  .card{
+
+.slide__filter {
+  .container {
+    padding: 0 100px;
+    max-width: unset;
+    margin: 0;
+
+    .splide {
+      .splide__track {
+        .splide__list {
+          li {
+            margin-right: 32px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .card {
     background: #FFFFFF;
     border: 2.5px solid #2C83C5;
     box-sizing: border-box;
-    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
     height: 450px;
     position: relative;
-    .top{
-      padding: 0px 24px;
-      .img__text{
+
+    .top {
+      padding: 0 24px;
+
+      .img__text {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .text{
+
+        .text {
           font-size: 24px;
           line-height: 29px;
           letter-spacing: 0.125em;
@@ -349,14 +370,16 @@ export default {
         }
       }
     }
-    .main__img{
+
+    .main__img {
       display: flex;
       justify-content: center;
       margin-top: 25px;
       margin-bottom: 7px;
     }
-    .bottom{
-      .fil__info{
+
+    .bottom {
+      .fil__info {
         text-align: center;
         font-size: 24px;
         line-height: 29px;
@@ -367,7 +390,8 @@ export default {
         margin-bottom: 16px;
       }
     }
-    .fil__id{
+
+    .fil__id {
       text-align: center;
       font-size: 16px;
       line-height: 19px;
@@ -383,9 +407,11 @@ export default {
     }
   }
 }
-.splide__slide.is-visible{
+
+.splide__slide.is-visible {
   margin-right: 65px !important;
 }
+
 .my-slider-progress {
   background: #ccc;
 }
@@ -396,7 +422,77 @@ export default {
   transition: width 400ms ease;
   width: 0;
 }
-li{
+
+li {
   width: 406px !important;
+}
+
+@media (max-width: 1250px) {
+
+  .title__text {
+    margin: 60px 0 40px 40px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .slide__filter {
+    .container {
+      padding: 0 40px;
+      .splide {
+        .splide__track {
+          .splide__list {
+            li {
+              margin-right: 17px !important;
+              width: 218px !important;
+            }
+          }
+        }
+
+      }
+    }
+
+    .card {
+      height: 240px;
+
+      .top {
+        .img__text {
+          .img {
+            img {
+              width: 40px;
+              height: 40px;
+            }
+          }
+
+          .text {
+            font-size: 12px;
+            line-height: 14px;
+          }
+        }
+      }
+
+      .main__img {
+        margin: 10px 0 0 0 !important;
+
+        img {
+          width: 140px;
+          height: 140px;
+        }
+      }
+
+      .bottom {
+        .fil__info {
+          font-size: 14px;
+          line-height: 17px;
+          margin-bottom: 8px;
+        }
+      }
+
+      .fil__id {
+        font-size: 10px;
+        line-height: 12px;
+        padding: 6px 0 7px 0;
+      }
+    }
+
+  }
 }
 </style>

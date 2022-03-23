@@ -23,17 +23,17 @@
     </div>
   </div>
 </template>
-<style scoped>
-.title__text{
+<style scoped lang="scss">
+.title__text {
   font-size: 48px;
   line-height: 57px;
   text-transform: uppercase;
   color: #282525;
   font-family: 'Marmelad-R';
-  margin-left: 100px;
-  margin-top: 200px;
-  margin-bottom: 92px;
+  padding-left: 100px;
+  margin: 120px 0 92px 0;
 }
+
 .orb {
   display: inline-block;
   margin: 0 46px;
@@ -45,16 +45,34 @@
   transform: scale(1.2);
   cursor: pointer;
 }
-span{
+
+span {
   display: flex;
 }
 
-.red {background:red;}
-.yellow {background:yellow;}
-.blue {background:blue;}
-.orange {background:orange;}
-.purple {background:purple;}
-.green {background:green;}
+.red {
+  background: red;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.blue {
+  background: blue;
+}
+
+.orange {
+  background: orange;
+}
+
+.purple {
+  background: purple;
+}
+
+.green {
+  background: green;
+}
 
 .marquee {
   height: 200px;
@@ -88,7 +106,35 @@ span {
 }
 
 @keyframes marquee {
-  0% { left: 0; }
-  100% { left: -100%; }
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .title__text {
+    margin: 60px 0 40px 0;
+    font-size: 28px;
+    line-height: 33px;
+    padding-left: 40px;
+  }
+  .marquee {
+    margin-bottom: 60px;
+    height: 100px;
+
+    .marquee--inner {
+      margin: 30px 0;
+
+      span {
+        img {
+          width: 120px;
+          height: 25px;
+        }
+      }
+    }
+  }
 }
 </style>
