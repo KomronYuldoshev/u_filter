@@ -10,39 +10,39 @@
       </div>
     </a>
     <div>
-<!--      <slide/>-->
+      <slide/>
       <fil/>
-<!--      <sliderr/>/-->
-<!--      <labaratori/>/-->
-<!--      <autoscroll/>-->
-<!--      <maps/>-->
-<!--      <subscribe/>-->
-<!--      <foter/>-->
+      <sliderr/>/
+      <labaratori/>/
+      <autoscroll/>
+      <maps/>
+      <subscribe/>
+      <foter/>
     </div>
   </div>
 </template>
 <script>
-// import slide from '../components/FristPage/FilterSlide'
+import slide from '../components/FristPage/FilterSlide'
 import fil from '../components/FristPage/SpecialFilter'
-// import sliderr from '../components/FristPage/slider'
-// import labaratori from '../components/FristPage/labaratori'
-// import autoscroll from '../components/FristPage/autoscroll'
-// import maps from '../components/FristPage/MapSite'
-// import subscribe from '../components/FristPage/SubscribeUs'
-// import foter from '../components/FristPage/Footer'
+import sliderr from '../components/FristPage/slider'
+import labaratori from '../components/FristPage/labaratori'
+import autoscroll from '../components/FristPage/autoscroll'
+import maps from '../components/FristPage/MapSite'
+import subscribe from '../components/FristPage/SubscribeUs'
+import foter from '../components/FristPage/Footer'
 export default {
   data() {
     return {}
   },
   components: {
-    // slide,
+    slide,
     fil,
-    // sliderr,
-    // labaratori,
-    // autoscroll,
-    // maps,
-    // subscribe,
-    // foter
+    sliderr,
+    labaratori,
+    autoscroll,
+    maps,
+    subscribe,
+    foter
   },
   mounted() {
     window.addEventListener("scroll", function () {
