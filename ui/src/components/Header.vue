@@ -69,7 +69,7 @@
         </div>
       </div>
     </header>
-    <div class="menu2" :class="{'active' : isActive}">
+    <div class="menu2" :class="{'active' : isActive}" @mouseup="menu">
       <ul>
         <li @click="exit__menu">
           <router-link
@@ -113,6 +113,7 @@
         </li>
       </ul>
     </div>
+    <div :class=" isOpen ? 'bg_all' : 'back' "  @mouseup="menu"></div>
 <!--    <div class="back"></div>-->
   </div>
 </template>
@@ -120,12 +121,14 @@
 export default {
   data(){
     return{
-      isActive: false
+      isActive: false,
+      isOpen: false,
     }
   },
   methods:{
     menu(){
       this.isActive = !this.isActive
+      this.isOpen = !this.isOpen
     },
     exit__menu(){
       this.isActive = false

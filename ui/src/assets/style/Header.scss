@@ -147,42 +147,75 @@
         }
       }
     }
-    .menu2{
+    .menu2 {
       position: absolute;
-      background: #5ca8f2;
-      width: 90%;
-      height: 100vh;
-      margin-top: 30px;
+      top: 90px;
       left: -1000px;
+      z-index: 1;
+      padding: 46px 0 0 32px;
+      width: 268px;
+      //transform: translateX(-268px);
+      background: #FFFFFF;
+      height: 100vh;
       transition: all ease .8s;
       &.active{
         left: 0;
         transition: all ease .8s;
       }
-      ul{
+      ul {
         flex-direction: column;
-        li{
-          margin-bottom: 40px;
+        align-items: start;
+
+        li {
+          margin: 0 0 27px 0;
+
+          a {
+            font-size: 24px;
+            line-height: 130%;
+          }
         }
       }
     }
+    //.menu2{
+    //  position: absolute;
+    //  background: #5ca8f2;
+    //  width: 90%;
+    //  height: 100vh;
+    //  margin-top: 30px;
+    //  left: -1000px;
+    //  transition: all ease .8s;
+    //  &.active{
+    //    left: 0;
+    //    transition: all ease .8s;
+    //  }
+    //  ul{
+    //    flex-direction: column;
+    //    li{
+    //      margin-bottom: 40px;
+    //    }
+    //  }
+    //}
   }
   .header .search__language .search{
     margin-right: 24px;
   }
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
+    .back{
+      transition: all ease .8s;
+    }
     .bg_all {
       background: black;
       opacity: 0.4;
-      transition: all 0.5s ease-in-out;
       position: absolute;
       z-index: 0;
-      top: 48px;
-      width: 99vw;
+      top: 90px;
+      width: 101vw;
       height: 100vh;
+      transition: all ease .8s;
+
     }
     .all {
-      padding: 4px 16px;
+      padding: 30px 16px;
       background: #FFFFFF;
 
       .header {
@@ -201,14 +234,14 @@
           margin-right: 20px;
         }
 
-        .menu {
+        .menu2 {
           position: absolute;
           top: 48px;
           left: 0;
           z-index: 1;
           padding: 46px 0 0 32px;
           width: 268px;
-          transform: translateX(-268px);
+          //transform: translateX(-268px);
           background: #FFFFFF;
           height: 100vh;
 
@@ -289,7 +322,7 @@
     left: 3px;
     background: #292D32;
     width: 21px;
-    height: 1.5px;
+    height: 2.5px;
     border-radius: 8px;
     transition: all 0.5s ease-in-out;
   }
@@ -301,7 +334,7 @@
     top: 16px;
     background: #292D32;
     width: 21px;
-    height: 1.5px;
+    height: 2.5px;
     border-radius: 8px;
     transition: all 0.5s ease-in-out;
   }
@@ -326,7 +359,7 @@
       top: 11px;
       background: #292D32;
       width: 11px;
-      height: 1.5px;
+      height: 2.5px;
       border-radius: 8px;
       transition: all 0.5s ease-in-out;
     }
