@@ -10,6 +10,8 @@ import {i18n} from './i18n/index'
 
 Vue.use( VueSplide );
 Vue.config.productionTip = false
+Vue.prototype.$scrollToTop = () => window.scrollTo(0,0)
+
 
 new Vue({
   router,

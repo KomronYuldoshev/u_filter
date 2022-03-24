@@ -137,7 +137,7 @@
   .all{
     padding-top: 40px;
     .header{
-      margin: 0px 10px;
+      margin: 0px 0px;
       .logo{
         left: 60px;
         a{
@@ -157,10 +157,10 @@
       //transform: translateX(-268px);
       background: #FFFFFF;
       height: 100vh;
-      transition: all ease .8s;
+      transition: all ease .6s;
       &.active{
         left: 0;
-        transition: all ease .8s;
+        transition: all ease .6s;
       }
       ul {
         flex-direction: column;
@@ -201,7 +201,7 @@
   }
   @media (max-width: 800px) {
     .back{
-      transition: all ease .8s;
+      transition: all ease .6s;
     }
     .bg_all {
       background: black;
@@ -211,7 +211,7 @@
       top: 90px;
       width: 101vw;
       height: 100vh;
-      transition: all ease .8s;
+      transition: all ease .6s;
 
     }
     .all {

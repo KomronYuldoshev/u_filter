@@ -14,6 +14,7 @@
         <ul>
           <li>
             <router-link
+                @click.native="$scrollToTop"
                 to="/"
             >
               Главная
@@ -22,6 +23,7 @@
           </li>
           <li>
             <router-link
+                @click.native="$scrollToTop"
                 to="/product"
             >
               Продукты
@@ -30,6 +32,7 @@
           </li>
           <li>
             <router-link
+                @click.native="$scrollToTop"
                 to="/kompaniya"
             >
               Компания
@@ -38,6 +41,7 @@
           </li>
           <li>
             <router-link
+                @click.native="$scrollToTop"
                 to="/Sertificat"
             >
               Сертификаты
@@ -46,6 +50,7 @@
           </li>
           <li>
             <router-link
+                @click.native="$scrollToTop"
                 to="/contact"
             >
               Контакты
@@ -73,6 +78,7 @@
       <ul>
         <li @click="exit__menu">
           <router-link
+              @click.native="$scrollToTop"
               to="/"
           >
             Главная
@@ -81,6 +87,7 @@
         </li>
         <li @click="exit__menu" class="product__menu">
           <router-link
+              @click.native="$scrollToTop"
               to="/product"
           >
             Продукты
@@ -89,6 +96,7 @@
         </li>
         <li @click="exit__menu">
           <router-link
+              @click.native="$scrollToTop"
               to="/kompaniya"
           >
             Компания
@@ -97,6 +105,7 @@
         </li>
         <li @click="exit__menu">
           <router-link
+              @click.native="$scrollToTop"
               to="/Sertificat"
           >
             Сертификаты
@@ -105,6 +114,7 @@
         </li>
         <li @click="exit__menu">
           <router-link
+              @click.native="$scrollToTop"
               to="/contact"
           >
             Контакты
@@ -132,6 +142,9 @@ export default {
     },
     exit__menu(){
       this.isActive = false
+    },
+    scrollToTop() {
+      window.scrollTo(0,0);
     }
   }
 }
