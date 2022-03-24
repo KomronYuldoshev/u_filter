@@ -23,7 +23,8 @@
 </template>
 <script>
 import slide from '../components/FristPage/FilterSlide'
-import fil from '../components/FristPage/SpecialFilter'
+// import fil from '../components/FristPage/SpecialFilter'
+import fil from '../components/filter'
 import sliderr from '../components/FristPage/slider'
 import labaratori from '../components/FristPage/labaratori'
 import autoscroll from '../components/FristPage/autoscroll'
