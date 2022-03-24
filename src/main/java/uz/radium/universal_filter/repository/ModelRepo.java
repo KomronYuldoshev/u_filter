@@ -15,9 +15,9 @@ public interface ModelRepo extends JpaRepository<Model, Long> {
 
     Optional<Model> findByIdAndTrashIsFalse(Long id);
 
-    //selet * from model where name = :name;
+    //select * from model where name = :name;
     List<Model> findAllByNameAndTrashIsFalse(String name);
 
-    //selet * from model where name = :name;
+    //select * from model where name = :name;
     Optional<Model> findByNameAndTrashIsFalse(String name);
 }
